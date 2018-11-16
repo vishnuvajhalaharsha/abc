@@ -1,0 +1,78 @@
+<!--
+  Generated template for the MydevicesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <!-- <ion-title>mydevices</ion-title> -->
+    
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding >
+	<!-- <button ion-button icon-only color="royal">
+  <ion-icon name="settings"></ion-icon>
+  
+</button>
+<button ion-button icon-only >
+   <ion-icon name="help"></ion-icon>
+  
+</button>
+<button ion-button icon-center>
+  <ion-icon name="analytics"></ion-icon>
+  
+</button> -->
+<ion-toolbar color="dark">
+        <ion-buttons end style="padding-right:50px">
+            <button ion-button (click)="goToFivePage()"  icon-only color="royal">
+                <ion-icon name="settings"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-buttons end style ="padding-right: 50px">
+            <button ion-button (click)="goToSixPage()">
+                <ion-icon name="stats"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-buttons end style="padding-right: 50px">
+            <button ion-button  (click)="goToSevenPage()" >
+                <ion-icon name="help"></ion-icon>
+
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+
+    <H3 align="center">Your Rooms</H3>
+    <button ion-button (click)="goToThirdPage()" block outline>Hallroom</button>
+    <button ion-button  (click)="goToFourthPage()" block outline>Kitchen</button>
+    <button ion-button block outline>BedRoom 1</button>
+    <button ion-button block outline>Bedroom 2</button>
+    <button ion-button block outline>Bedroom 2</button>
+ 
+ 
+<ion-item>
+    <ion-input type="text" placeholder="Add a room"  [(ngModel)] ="userPostData.feed" ></ion-input>
+    
+  </ion-item>
+  
+    <button ion-button  (click)="feedUpdate()" >add</button>
+  
+  <button ion-button *ngFor = "let item of dataSet" >
+    {{item.getFed}}
+  </button>
+
+
+
+
+
+    <ion-fab bottom right  >
+       <button  ion-fab >
+       	 <ion-icon name="add"></ion-icon>
+       </button>
+   </ion-fab>
+</ion-content>

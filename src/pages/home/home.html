@@ -1,0 +1,32 @@
+
+
+
+  
+   <ion-content class="background">
+	<ion-card>
+		<ion-card-header>
+			Login Details
+		</ion-card-header>
+		<ion-card-content>
+		<ion-list no-line>
+				
+            <ion-item>
+					<ion-input type="email" placeholder="Email" [(ngModel)]="userData.email"  ></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-input type="password" placeholder="Password"  [(ngModel)]="userData.password"></ion-input>
+
+					</ion-item>
+
+				<button ion-button (click)="goToSecondPage()" block default color="#3b5998" >Log in</button>
+				<h2> OR </h2>
+					<button class="bottom" ion-button (click)="goToEightPage()" default full color="#3b5998">Create an account?</button>
+				
+		</ion-list>
+		
+
+		</ion-card-content>
+
+	</ion-card>
+	
+</ion-content>
